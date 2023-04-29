@@ -10,9 +10,7 @@ let numberOfPeople = Number(numberOfPeopleDiv.innerText);
 // ** Calculate the total bill per person **
 const calculateBill = () => {
 	const bill = Number(billInput.value);
-	const tipPercentage = Number(tipInput.value) / 100;
-
-	const tipAmt = bill * tipPercentage;
+	const tipAmt = Number(tipInput.value);
 	totalAmt = bill + tipAmt;
 	const perPersonTotal = totalAmt / numberOfPeople;
 
